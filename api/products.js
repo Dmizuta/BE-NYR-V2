@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../components/db'); // você precisa criar esse arquivo de conexão se ainda não tiver
+const pool = require('../components/db');
 
 router.get('/', async (req, res) => {
   try {
