@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../components/db');
+const pool = require('../../components/db'); // ✅ now correct
+
 
 // GET all products
 router.get('/', async (req, res) => {
